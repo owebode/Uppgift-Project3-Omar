@@ -1,13 +1,12 @@
-# Project 3 -school-2022-ny
+# Uppgift-Project3-Omar
 
 
 ## Clone to update base system
-`git clone https://github.com/owebode/sass2-base-school-2022-ny.git .`
+`git clone https://github.com/owebode/Uppgift-Project3-Omar.git .`
 
 ## Use as new project
-`git clone https://github.com/owebode/sass2-base-school-2022-ny.git . && rm -rf .git`
+`git clone https://github.com/owebode/Uppgift-Project3-Omar.git . && rm -rf .git`
 
 
 ## Develop
-`sass --watch src/scss/style.scss style.css`# project-3-3-school-2022ny
-# Uppgift-Project3-Omar
+`sass --watch src/scss/style.scss style.css`
