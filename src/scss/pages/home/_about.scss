@@ -1,0 +1,22 @@
+.about {
+    height: 100vh;
+    display: grid;
+    padding: 32px;
+
+    &__inner {
+        background-color: black; // Temp
+        background-image: url(../../../../assets/images/airplane.png), url(../../../../assets/images/sun\ and\ sea.png) ;
+        background-repeat: no-repeat;
+        background-size: 480px, cover;
+        background-position: 30% 35%, center;
+        display: grid;
+        grid-template-rows: 160px 1fr 80px;
+
+
+    }
+
+    &__main {
+
+    }
+    
+}
