@@ -1,6 +1,7 @@
 @use '../../components/buttons' as button;
 @use '../../utilities/responsive';
 
+// About
 .about {
     background-color: var(--color-light);
     height: 100vh;
@@ -9,21 +10,13 @@
     color: var(--color-light);
 
     &__inner {
-        background-color: black; // Temp
-        background-image: url(../../../../assets/images/airplane.png), url(../../../../assets/images/sun\ and\ sea.png) ;
+        background-image: url(../../../../assets/images/airplane.png), url(../../../../assets/images/sun\ and\ sea\ 42.png) ;
         background-repeat: no-repeat;
         background-size: 480px, cover;
         background-position: 30% 34%, center;
         display: grid;
         grid-template-rows: 300px 1fr 80px;
         align-items: center;
-        // justify-items: center; // temp.
-
-
-    }
-
-    &__main {
-        
     }
 
     &__content {
@@ -38,7 +31,6 @@
     
     &__line {
         
-        height: 3px;
         max-width: 70vw;
         margin: 0 auto;
         
@@ -58,8 +50,8 @@
 }
 
 .description {
-    background-color: rgba(0, 0, 0, 0);
     padding: 0 var(--gap-m) 0 var(--gap-m);
+
 
     &__title {
         font-size: clamp(2rem, 8vw, 4.25rem);

@@ -458,8 +458,7 @@ li {
   color: var(--color-light);
 }
 .about__inner {
-  background-color: black;
-  background-image: url(../../../../assets/images/airplane.png), url(../../../../assets/images/sun\ and\ sea.png);
+  background-image: url(../../../../assets/images/airplane.png), url(../../../../assets/images/sun\ and\ sea\ 42.png);
   background-repeat: no-repeat;
   background-size: 480px, cover;
   background-position: 30% 34%, center;
@@ -475,7 +474,6 @@ li {
   padding: 0 15vw;
 }
 .about__line {
-  height: 3px;
   max-width: 70vw;
   margin: 0 auto;
 }
@@ -489,7 +487,6 @@ li {
 }
 
 .description {
-  background-color: rgba(0, 0, 0, 0);
   padding: 0 var(--gap-m) 0 var(--gap-m);
 }
 .description__title {
