@@ -357,7 +357,7 @@ li {
   fill: var(--color-accent);
 }
 .hero__social {
-  position: absolute;
+  position: fixed;
   right: var(--gap-m);
   top: 40%;
   transform: rotate(-90deg) translateX(50%);
@@ -470,6 +470,22 @@ li {
 .about__content {
   max-width: 50rem;
   width: 100%;
+}
+.about__footer {
+  padding: 0 15vw;
+}
+.about__line {
+  height: 3px;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+.about__line::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--color-light);
+  opacity: 0.34;
+  bottom: 0;
 }
 
 .description {

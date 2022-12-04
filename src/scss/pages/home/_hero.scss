@@ -121,7 +121,10 @@
     }
 
     &__social {
-        position: absolute;
+        
+        // Ändrats av mig 
+        position: fixed;  
+        // position: absolute;  
         right: var(--gap-m);
         top: 40%;
         transform: rotate(-90deg) translateX(50%);

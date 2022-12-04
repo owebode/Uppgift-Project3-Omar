@@ -30,8 +30,30 @@
         max-width: 50rem;
         width: 100%;
     }
-
-
+    
+    &__footer {
+    
+        padding: 0 15vw;
+    }
+    
+    &__line {
+        
+        height: 3px;
+        max-width: 70vw;
+        margin: 0 auto;
+        
+        
+        &::before {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: var(--color-light);
+            opacity: 0.34;
+            bottom: 0;
+            
+        }
+    
+    }
     
 }
 
