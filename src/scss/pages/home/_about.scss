@@ -17,6 +17,10 @@
         @include responsive.max(1230px) {
             flex-wrap: wrap;
         }
+
+        @include responsive.max(750px) {
+            padding: 192px calc(32px + var(--gap-s));
+        }
     }
 
     &__title {

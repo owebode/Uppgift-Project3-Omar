@@ -467,6 +467,11 @@ li {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 750px) {
+  .about__inner {
+    padding: 192px calc(32px + var(--gap-s));
+  }
+}
 .about__title {
   font-size: clamp(2rem, 8vw, 4.25rem);
   margin: 0;
