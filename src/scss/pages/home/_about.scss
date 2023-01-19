@@ -3,7 +3,7 @@
 
 // About
 .about {
-    background-color: var(--color-light);
+    background-color: var(--color-dark-200);
     color: var(--color-light);
 
     &__inner {
@@ -67,6 +67,7 @@
        display: grid;
        grid-template-rows: 300px 1fr 80px;
        align-items: center;
+       transition: all 0.5s;
 
        @include responsive.max(1230px) {
         min-width: 500px;

@@ -451,7 +451,7 @@ li {
 }
 
 .about {
-  background-color: var(--color-light);
+  background-color: var(--color-dark-200);
   color: var(--color-light);
 }
 .about__inner {
@@ -525,6 +525,7 @@ li {
   display: grid;
   grid-template-rows: 300px 1fr 80px;
   align-items: center;
+  transition: all 0.5s;
 }
 @media screen and (max-width: 1230px) {
   .about__image {
