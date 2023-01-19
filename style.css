@@ -357,7 +357,7 @@ li {
   fill: var(--color-accent);
 }
 .hero__social {
-  position: fixed;
+  position: absolute;
   right: var(--gap-m);
   top: 40%;
   transform: rotate(-90deg) translateX(50%);
@@ -452,62 +452,32 @@ li {
 
 .about {
   background-color: var(--color-light);
-  height: 100vh;
-  display: grid;
-  padding: 32px;
   color: var(--color-light);
 }
 .about__inner {
-  background-image: url(../../../../assets/images/airplane.png), url(../../../../assets/images/sun\ and\ sea\ 42.png);
-  background-repeat: no-repeat;
-  background-size: 480px, cover;
-  background-position: 30% 34%, center;
-  display: grid;
-  grid-template-rows: 300px 1fr 80px;
+  padding: 192px calc(32px + var(--gap-xl));
+  background-color: var(--color-dark-200);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: var(--gap-l);
 }
-.about__content {
-  max-width: 50rem;
-  width: 100%;
+@media screen and (max-width: 1230px) {
+  .about__inner {
+    flex-wrap: wrap;
+  }
 }
-.about__footer {
-  padding: 0 15vw;
-}
-.about__line {
-  max-width: 70vw;
-  margin: 0 auto;
-}
-.about__line::before {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: var(--color-light);
-  opacity: 0.34;
-  bottom: 0;
-}
-
-.description {
-  padding: 0 var(--gap-m) 0 var(--gap-m);
-}
-.description__title {
+.about__title {
   font-size: clamp(2rem, 8vw, 4.25rem);
   margin: 0;
   color: var(--color-light);
 }
-.description__text {
+.about__text {
   color: var(--color-light-200);
   font-size: var(--font-size-1);
   font-family: var(--font-sans);
 }
-.description__subtitle {
-  font-size: var(--font-size-3);
-  font-size: clamp(var(--font-size-1), 5vw, var(--font-size-3));
-  font-style: italic;
-  font-weight: 300;
-  margin: 0.5rem 0 0 0;
-  color: var(--color-light-200);
-}
-.description__button {
+.about__button {
   background-color: transparent;
   color: var(--color-light);
   border: 0;
@@ -519,24 +489,53 @@ li {
   gap: var(--gap-s);
   margin-top: var(--gap-s);
 }
-.description__button svg {
+.about__button svg {
   opacity: 0.34;
 }
-.description__button:hover {
+.about__button:hover {
   background-color: transparent;
   color: var(--color-light);
 }
 @media screen and (max-width: 40rem) {
-  .description__button {
+  .about__button {
     font-size: var(--font-size-1);
   }
 }
-.description__button svg {
+.about__button svg {
   transition: all 0.2s;
 }
-.description__button:hover svg {
+.about__button:hover svg {
   opacity: 1;
   transform: rotate(90deg);
+}
+.about__image {
+  min-height: 350px;
+  min-width: 500px;
+  border: 1px solid var(--color-light);
+  border-radius: 10px;
+  background-image: url(../../../../assets/images/airplane.png), url(../../../../assets/images/sun\ and\ sea\ 42.png);
+  background-repeat: no-repeat;
+  background-size: 260px, cover;
+  background-position: 60% 44%, center;
+  display: grid;
+  grid-template-rows: 300px 1fr 80px;
+  align-items: center;
+}
+@media screen and (max-width: 1230px) {
+  .about__image {
+    min-width: 500px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .about__image {
+    min-width: 200px;
+    width: 100%;
+    background-size: 150px, cover;
+  }
+}
+.about__image:hover {
+  background-position: 40% 34%, center;
 }
 
 /*# sourceMappingURL=style.css.map */
